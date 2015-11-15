@@ -27,7 +27,6 @@ gulp.task('less', function() {
     .pipe(plugins.less({
       plugins: [autoprefix, cleancss]
     }))
-    // .pipe(plugins.minifyCss())
     .pipe(gulp.dest('./build/css'));
 });
 
