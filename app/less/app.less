@@ -1,4 +1,5 @@
 @import (less) "../../node_modules/fullpage.js/jquery.fullPage.css";
+@import (less) "./keyrames.css";
 .section {
   position: relative;
   overflow: hidden;
@@ -63,6 +64,23 @@
     margin-top: 500px;
     // bottom: 60px;
   }
+  &.active {
+    .word1 {
+      animation: bounceIn 1s 0.5s ease both;
+    }
+    .word2 {
+      animation: bounceIn 1s 0.8s ease both;
+    }
+    .word3 {
+      animation: bounceIn 1s 1.1s ease both;
+    }
+    .word4 {
+      animation: bounceIn 1s 1.3s ease both;
+    }
+    .ctx3 {
+      animation: fadeInUp 1s 1.5s ease both;
+    }
+  }
 }
 
 .page2 {
@@ -73,7 +91,6 @@
   .ctx1 {
     height: 90px;
     margin-left: -166px;
-    // top: 100px;
     margin-top: -300px;
   }
   .ctx2 {
@@ -89,21 +106,44 @@
       position: absolute;
     }
     .in {
-      left: -500px;
+      left: -450px;
     }
     .rich {
       left: -150px;
     }
     .new {
-      left: 150px;
+      left: 130px;
     }
     .high {
       left: -300px;
       margin-top: 200px;
     }
     .fast {
-      left: 0px;
+      left: 30px;
       margin-top: 200px;
+    }
+  }
+  &.active {
+    .ctx1 {
+      animation: flipInX 0.8s 0.5s ease both;
+    }
+    .ctx2 {
+      animation: fadeIn 1s 1.2s ease both;
+    }
+    .in {
+      animation: flipInY 1s 1.5s ease both;
+    }
+    .rich {
+      animation: flipInY 1s 1.8s ease both;
+    }
+    .new {
+      animation: flipInY 1s 2.1s ease both;
+    }
+    .high {
+      animation: flipInY 1s 2.4s ease both;
+    }
+    .fast {
+      animation: flipInY .6s 2.7s ease both;
     }
   }
 }
@@ -124,6 +164,17 @@
     margin-left: -521px;
     bottom: 96px;
   }
+  &.active {
+    .ctx1 {
+      animation: fadeInUp 1s 0.5s ease both;
+    }
+    .ctx2 {
+      animation: fadeInUp 1s 1s ease both;
+    }
+    .ctx3 {
+      animation: fadeInUp 1s 1.8s ease both;
+    }
+  }
 }
 
 .page4 {
@@ -142,22 +193,6 @@
       width: 100%;
     }
   }
-  /*  .ctx1{
-    margin-left: -292px;
-    top: 60px;
-  }
-  .ctx2{
-    margin-left: -164px;
-    bottom: 120px;
-  }
-  .ctx3{
-    margin-left: -107px;
-    bottom: 10px;
-  }
-  .ctx4{
-    margin-left: -229px;
-    bottom: 60px;
-  }*/
   .ctx1 {
     margin-left: -292px;
     top: 60px;
@@ -173,6 +208,20 @@
   .ctx4 {
     margin-left: -229px;
     margin-top: 290px;
+  }
+  &.active {
+    .ctx0 {
+      animation: fadeInDown 1s 0.5s ease both;
+    }
+    .ctx1 {
+      animation: fadeIn 1s 1s ease both;
+    }
+    .ctx2 {
+      animation: fadeInUp 1s 1s ease both;
+    }
+    .ctx3 {
+      animation: fadeInUp 1s 1s ease both;
+    }
   }
 }
 
@@ -208,6 +257,28 @@
     margin-left: 120px;
     margin-top: 230px;
   }
+  &.active {
+    .ctx0 {
+      animation: fadeInDownBig 1s 0s ease both;
+    }
+    .ctx1 {
+      animation: fadeInLeft 1s 1s ease both;
+    }
+    .ctx2 {
+      animation: fadeInRight 1s 1.5s ease both;
+    }
+    .ctx3 {
+      animation: fadeInLeft 1s 2s ease both;
+    }
+    .ctx4 {
+      animation: fadeInRight 1s 2.5s ease both;
+    }
+    .ctx5 {
+      animation: fadeInRight 1s 3s ease both;
+    }
+
+  }
+
 }
 
 .page6 {
@@ -261,6 +332,36 @@
     margin-left: -280px;
     margin-top: -310px;
   }
+  &.active{
+    .ctx8{
+      animation: fadeInUp 0.8s 1s ease both;
+    }
+    .ctx7{
+      animation: fadeInUp 0.8s 1.1s ease both;
+    }
+    .ctx6{
+      animation: fadeInUp 0.8s 1.2s ease both;
+    }
+    .ctx5{
+      animation: fadeInUp 0.8s 1.3s ease both;
+    }
+    .ctx4{
+      animation: fadeInUp 0.8s 1.4s ease both;
+    }
+    .ctx3{
+      animation: fadeInUp 0.8s 1.5s ease both;
+    }
+    .ctx2{
+      animation: fadeInUp 0.8s 1.6s ease both;
+    }
+    .ctx1{
+      animation: fadeInUp 0.8s 1.7s ease both;
+    }
+    .ctx9{
+      animation: bounceIn 0.8s 2.2s ease both;
+    }
+
+  }
 }
 
 .page7 {
@@ -292,6 +393,26 @@
     margin-left: -120px;
     bottom: 20px;
   }
+  &.active{
+    .ctx1{
+      animation: bounceInRight 1s 0.2s ease both;
+    }
+    .ctx2{
+      animation: bounceInLeft 1s 0.8s ease both;
+    }
+    .ctx3{
+      animation: bounceInRight 1s 1.4s ease both;
+    }
+    .ctx4{
+      animation: bounceInLeft 1s 2s ease both;
+    }
+    .ctx5{
+      animation: fadeInDown 1s 2.8s ease both;
+    }
+    .ctx6{
+      animation: fadeInUp 1s 2.8s ease both;
+    }
+  }
 }
 
 .page8 {
@@ -316,8 +437,22 @@
     margin-top: 130px;
     width: 216px;
     height: 43px;
-    img{
+    img {
       width: 100%;
+    }
+  }
+  &.active{
+    .ctx1{
+      animation: bounceInLeft 1s 0.2s ease both;
+    }
+    .ctx2{
+      animation: bounceInRight 1s 0.8s ease both;
+    }
+    .ctx3{
+      animation: bounceInRight 1s 1s ease both;
+    }
+    .ctx4{
+      animation: flipInX 2s 2.1s ease both;
     }
   }
 }
