@@ -1,5 +1,6 @@
 /node_modules
-/app/img/*
-/build/css/*
-/build/js/*
-/build/img/*
+/app/img/
+/build/css/
+/build/js/
+/build/img/
+.publish/

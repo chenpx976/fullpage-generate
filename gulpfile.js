@@ -14,7 +14,7 @@ var gls = require('gulp-live-server');
 var server = gls.static('build', 8001);
 
 gulp.task('scripts', function() {
-  gulp.src('app/js/main.js')
+  return gulp.src('app/js/main.js')
     .pipe(plugins.browserify({
       insertGlobals: true,
       debug: true
@@ -31,7 +31,7 @@ gulp.task('less', function() {
 });
 
 gulp.task('static', function() {
-  gulp.src('./app/img/**/*')
+  return gulp.src('./app/img/**/*')
     .pipe(gulp.dest('./build/img/'));
 });
 
@@ -46,6 +46,10 @@ gulp.task('watch', ['server'], function() {
   gulp.watch('./build/**/*', function() {
     server.notify.apply(server, arguments);
   });
+});
+gulp.task('deploy', ['scripts', 'less', 'static'], function() {
+  return gulp.src('./build/**/*')
+    .pipe(plugins.ghPages());
 });
 gulp.task('server', ['scripts', 'less', 'static', 'serve']);
 
