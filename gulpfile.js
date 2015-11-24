@@ -6,7 +6,19 @@ var LessPluginCleanCSS = require('less-plugin-clean-css'),
     advanced: true
   }),
   autoprefix = new LessPluginAutoPrefix({
-    browsers: ["last 10 versions"]
+    browsers: [
+      'last 3 versions',
+      'ie >= 10',
+      'ie_mob >= 10',
+      'ff >= 30',
+      'chrome >= 34',
+      'safari >= 6',
+      'opera >= 12.1',
+      'ios >= 6',
+      'android >= 4.4',
+      'bb >= 10',
+      'and_uc 9.9',
+    ]
   });
 var path = require('path');
 var gls = require('gulp-live-server');
